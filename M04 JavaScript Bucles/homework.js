@@ -18,8 +18,8 @@ function mayoriaDeEdad(edad) {
    // Caso contrario: "Not allowed".
    // Tu código:
    if (edad>=18){
-      return "allowed";}
-      else {return "not allowed"}
+      return "Allowed";}
+      else {return "Not allowed"}
     
 }
 
@@ -31,10 +31,10 @@ function conection(status) {
    // Retornar el estado de conexión del usuario.
    // Tu código:
    if (status===1 ){
-      return "online";
+      return "Online";
    }  else if (status===2) {
-      return "away";
-   }  else {return "offline"};
+      return "Away";
+   }  else {return "Offline"};
 }
 
 function saludo(idioma) {
@@ -45,12 +45,12 @@ function saludo(idioma) {
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
    if (idioma === "aleman"){
-      return "Guten Tag";
+      return "Guten Tag!";
   } else if (idioma === "mandarin"){
-      return "Ni Hao";
+      return "Ni Hao!";
   } else if (idioma === "ingles") {
-      return "Hello";
-  } else {return "Hola";}
+      return "Hello!";
+  } else {return "Hola!";}
 }
 
 function colors(color) {
@@ -64,15 +64,15 @@ function colors(color) {
    // Tu código:
    switch(color){
         case "blue":
-            return "this is blue";
+            return "This is blue";
         case "red":
-            return "this is red";
+            return "This is red";
         case "green":
-            return "this is green";
+            return "This is green";
         case "orange":
-            return "this is orange";
+            return "This is orange";
         default:
-            return "color not found"; 
+            return "Color not found"; 
     }
 }
 
@@ -106,7 +106,6 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   function fizzBuzz(num) {
       switch (true) {
         case num % 3 === 0 && num % 5 === 0:
           return "fizzbuzz";
@@ -118,8 +117,6 @@ function fizzBuzz(num) {
           return false;
       }
     }
-    
-}
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
@@ -131,14 +128,14 @@ function operadoresLogicos(num1, num2, num3) {
    // Tu código:
    switch(true){
       case (num1 >num2 && num1> num3 && num1>0):
-        return"numero 1 es mayor y positivo";
+        return"Numero 1 es mayor y positivo";
       case (num1<0 ||num2<0  ||num3<0):
-          return "hay negativos";
+          return "Hay negativos";
       case (num3>num1 &&num3>num2):
           num3= num3+1
           return num3;
       case (num1===0 && num2===0 && num3===0):
-          return "error";
+          return "Error";
       default:
           return false;
   }
@@ -151,7 +148,6 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   function esPrimo(num) {
       if (num <= 1) {
         return false;
       }
@@ -164,22 +160,17 @@ function esPrimo(num) {
     
       return true;
     }
-    
-}
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   function esVerdadero(valor) {
       if (valor === true) {
         return "Soy verdadero";
       } else {
         return "Soy falso";
       }
     }
-    
-}
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
